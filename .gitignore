@@ -34,6 +34,30 @@ local.properties
 *.keystore
 !debug.keystore
 
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Android Studio
+captures/
+.externalNativeBuild
+
+# bundle file
+/**/index.android.bundle
+
+# Local configuration file (sdk path, etc)
+local.properties
+
 # node.js
 #
 node_modules/
