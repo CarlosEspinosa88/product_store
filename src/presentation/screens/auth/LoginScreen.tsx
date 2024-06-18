@@ -1,10 +1,10 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-export const AuthScreen = () => {
+export const LoginScreen = () => {
   return (
     <View>
-      <Text>AuthScreen!!!</Text>
+      <Text>LoginScreen</Text>
     </View>
   );
 };
