@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text} from 'react-native';
-import {PrimaryButton} from '../../components';
+import {PrimaryButton} from '../components';
 import {Button, FAB} from 'react-native-paper';
 import {globalStyles} from '../../theme/global.styles';
 import Icon from 'react-native-vector-icons/Ionicons';
