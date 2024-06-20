@@ -19,6 +19,7 @@ const Stack = createStackNavigator<RootParams>();
 export const StackNavigator = () => {
   return (
     <Stack.Navigator
+      initialRouteName="HomeScreen"
       screenOptions={{
         headerShown: false,
       }}>
