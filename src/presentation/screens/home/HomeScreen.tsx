@@ -1,5 +1,6 @@
 import React from 'react';
 import {Layout, Button, Text} from '@ui-kitten/components';
+import {StyleSheet} from 'react-native';
 
 export const HomeScreen = () => {
   return (

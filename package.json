@@ -8,7 +8,7 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "lint:fix": "npm run lint --fix",
-    "start": "react-native start",
+    "start": "react-native start --port 8081",
     "start:ios": "npm run ios -- --simulator='iPhone 15 Pro Max (5F158197-4105-4CC1-A146-25783D483351)'",
     "test": "jest",
     "reset": "npm start -- --reset-cache"
