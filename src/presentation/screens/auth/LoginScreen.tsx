@@ -32,6 +32,8 @@ export const LoginScreen = ({navigation}: Props) => {
     Alert.alert('Error', 'Usuario y contraseña incorrectos');
   };
 
+  console.log(form);
+
   return (
     <Layout style={styles.container}>
       <ScrollView style={styles.scroll}>

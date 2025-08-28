@@ -12,7 +12,7 @@ export interface AuthState {
   checkStatus: () => Promise<void>;
 }
 
-export const useAuthStore = create()(set => ({
+export const useAuthStore = create<AuthState>()(set => ({
   status: 'checking',
   token: undefined,
   user: undefined,
@@ -35,7 +35,9 @@ export const useAuthStore = create()(set => ({
       set({status: 'unauthenticated', token: undefined, user: undefined});
     }
 
-    await StorageAdapter.setItem('token', res.token);
-    set({status: 'authenticated', token: res.token, user: res.user});
+    if (res) {
+      await StorageAdapter.setItem('token', res.token);
+      set({status: 'authenticated', token: res.token, user: res.user});
+    }
   },
 }));
