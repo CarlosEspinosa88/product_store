@@ -5,7 +5,7 @@ import {useWindowDimensions, StyleSheet} from 'react-native';
 import {StackScreenProps} from '@react-navigation/stack';
 import {RootParams} from '../../navigation/StackNavigator';
 
-interface Props extends StackScreenProps<RootParams, 'LoginScreen'> {}
+interface Props extends StackScreenProps<RootParams, 'RegisterScreen'> {}
 
 export const RegisterScreen = ({navigation}: Props) => {
   const {height} = useWindowDimensions();

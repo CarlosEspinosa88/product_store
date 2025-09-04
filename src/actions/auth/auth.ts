@@ -1,4 +1,4 @@
-import {tesloApi} from '../../config/api/teslo-api';
+import {tesloApi  } from '../../config/api/teslo-api';
 import type {AuthResponse} from '../../infrastructure/interfaces/auth.responses';
 import type {User} from '../../domain/entities/user';
 
@@ -8,7 +8,7 @@ const userToken = (data: AuthResponse) => {
     email: data.email,
     fullName: data.fullName,
     isActive: data.isActive,
-    roles: data.isActive,
+    roles: data.isActive ? ['admin'] : ['user'],
   };
 
   return {
